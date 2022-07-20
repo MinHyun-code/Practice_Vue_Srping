@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.login.dao.LoginMapper">
+
+<insert id="joinAction" parameterType="com.example.demo.login.dto.UserDto">	
+	INSERT INTO `user` (USER_ID, USER_PW, USER_REG_DATE, USER_TYPE) values (#{user_id}, #{user_pw}, DATE_FORMAT(sysdate(),'%Y-%m-%d %H:%i:%s'), '1')
+</insert>  
+
+<select id="selectPw" parameterType="String" resultType="String">
+	SELECT USER_PW FROM `user` WHERE USER_ID = #{id}
+</select>
+
+<select id="mypageInfo" parameterType="String" resultType="com.example.demo.login.dto.UserDto">
+	SELECT USER_ID, USER_NAME, USER_BIRTH, USER_TYPE FROM `user` WHERE USER_ID = #{id}
+</select>
+
+<update id="myInfoUpdate" parameterType="com.example.demo.login.dto.UserDto">
+	UPDATE `user` SET USER_PW = #{user_pw}, USER_BIRTH = #{user_birth}, USER_NAME = #{user_name} WHERE USER_ID = #{user_id}
+</update>
+
+</mapper>

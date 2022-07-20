@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.map.dao.MapMapper">
+
+	<select id="mapList" resultType="com.example.demo.map.dto.MapDto">
+		SELECT SEQ, ADDRESS, LATITUDE, LONGITUDE, BUILDING_NM FROM map_mst
+	</select>
+	
+	<select id="mapDetailList" parameterType="int" resultType="com.example.demo.map.dto.MapDto">
+		SELECT SEQ, ADDRESS_NO, SHOP_NM FROM map_detail WHERE SEQ = #{seq} AND DEL_FLAG = 'N'
+	</select>
+	
+	<select id="maxAddressNo" parameterType="int" resultType="int">
+		SELECT max(ADDRESS_NO) FROM map_detail WHERE SEQ = #{seq} GROUP BY SEQ 
+	</select>
+	
+	<select id="cnt" parameterType="int" resultType="int">
+		SELECT count(ADDRESS_NO) FROM map_detail WHERE SEQ = #{seq}
+	</select>
+	
+	<insert id="mapDetailInsert" parameterType="com.example.demo.map.dto.MapDto">
+		INSERT INTO map_detail (SEQ, ADDRESS_NO, SHOP_NM, REG_USER_ID, SHOP_INTRO, SHOP_CALL, SHOP_ADDRESS) values (#{seq}, #{address_no} + 1, #{shop_nm}, #{reg_user_id}, #{shop_intro}, #{shop_call}, #{shop_address}) 
+	</insert>
+	
+	<update id="mapDetailDelete" parameterType="com.example.demo.map.dto.MapDto">
+		UPDATE map_detail SET DEL_FLAG = 'Y', DEL_USER_ID = #{del_user_id} WHERE SEQ = #{seq} AND ADDRESS_NO = #{address_no}
+	</update>
+	
+	<select id="mapReviewList" parameterType="com.example.demo.map.dto.MapDto" resultType="com.example.demo.map.dto.MapDto">
+		SELECT SEQ, ADDRESS_NO, REVIEW_SEQ, REVIEW_TITLE, REVIEW_CONTENT, REG_USER_ID, REVIEW_READ_CNT FROM map_review WHERE SEQ = #{seq} AND ADDRESS_NO = #{address_no}
+	</select>
+	
+	<select id="maxReviewSeq" parameterType="com.example.demo.map.dto.MapDto" resultType="int">
+		SELECT count(REVIEW_SEQ) FROM map_review WHERE SEQ = #{seq} AND ADDRESS_NO = #{address_no}
+	</select>
+	
+	<insert id="mapReviewInsert" parameterType="com.example.demo.map.dto.MapDto">
+		INSERT INTO map_review (SEQ, ADDRESS_NO, REVIEW_SEQ, REVIEW_TITLE, REVIEW_CONTENT, REG_USER_ID, REVIEW_READ_CNT, REVIEW_DATE) values 
+		(#{seq}, #{address_no},#{review_seq} + 1 , #{review_title}, #{review_content}, #{reg_user_id}, 0, DATE_FORMAT(sysdate(),'%Y-%m-%d %H:%i:%s'))
+	</insert>
+	
+	<insert id="insertImage" parameterType="com.example.demo.map.dto.ImageDto">
+		INSERT INTO IMAGE (seq, address_no, mimetype, original_name, data) VALUES (#{seq}, #{address_no} + 1, #{mimetype}, #{original_name}, #{data})	
+	</insert>
+	
+	<select id="mapDetailImg" parameterType="Map" resultType="com.example.demo.map.dto.ImageDto">
+		SELECT id, data, original_name FROM image WHERE seq = #{seq} AND address_no = #{address_no}
+	</select>
+	
+	<select id="mapDetailAll" parameterType="com.example.demo.map.dto.MapDto" resultType="com.example.demo.map.dto.MapDto">
+		SELECT SHOP_ADDRESS, SHOP_CALL, SHOP_INTRO, GUBUN FROM map_detail WHERE seq = #{seq} AND address_no = #{address_no}
+	</select>
+</mapper>

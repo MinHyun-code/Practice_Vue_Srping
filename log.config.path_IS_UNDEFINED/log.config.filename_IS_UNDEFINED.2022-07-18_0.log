@@ -1,0 +1,41 @@
+WARN  22-07-18 16:43:44[main] [DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/user/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/user/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+INFO  22-07-18 16:43:44[main] [PracticeApplicationTests:55] - Starting PracticeApplicationTests using Java 1.8.0_221 on mhan with PID 20468 (started by user in C:\springworkspace\Practice\practice)
+INFO  22-07-18 16:43:44[main] [PracticeApplicationTests:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 22-07-18 16:43:45[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+WARN  22-07-18 16:43:48[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: 2733b09a-854b-4466-922b-7bdd292da354
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  22-07-18 16:43:48[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  22-07-18 16:43:50[main] [WelcomePageHandlerMapping:57] - Adding welcome page template: index
+INFO  22-07-18 16:43:50[main] [PracticeApplicationTests:61] - Started PracticeApplicationTests in 6.759 seconds (JVM running for 8.858)
+WARN  22-07-18 16:47:44[main] [DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer:78] - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/user/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/user/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+INFO  22-07-18 16:47:44[main] [PracticeApplicationTests:55] - Starting PracticeApplicationTests using Java 17.0.1 on mhan with PID 13948 (started by user in C:\springworkspace\Practice\practice)
+INFO  22-07-18 16:47:44[main] [PracticeApplicationTests:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 22-07-18 16:47:45[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+WARN  22-07-18 16:47:46[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: c5035426-66a1-4501-b62b-9b19d4e6b99b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  22-07-18 16:47:46[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  22-07-18 16:47:47[main] [PracticeApplicationTests:61] - Started PracticeApplicationTests in 3.255 seconds (JVM running for 4.325)
