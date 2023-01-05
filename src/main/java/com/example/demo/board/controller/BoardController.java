@@ -1,7 +1,11 @@
 package com.example.demo.board.controller;
 
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
 
 import org.apache.ibatis.annotations.Delete;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -15,6 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.board.dto.BoardDto;
 import com.example.demo.board.service.BoardServiceImpl;
+import com.example.demo.common.CommonUtil;
+import com.example.demo.common.paging.Paging;
 
 import lombok.RequiredArgsConstructor;
 
@@ -24,12 +30,34 @@ public class BoardController {
 	private final BoardServiceImpl boardSerivce;
 
 	// 게시판 조회
-	@RequestMapping(method = RequestMethod.GET, value = "/api/board")
-    public List<BoardDto> boardList(@RequestParam(required = false) String board_title){
+	@RequestMapping(method = RequestMethod.POST, value = "/api/board")
+    public List<Map<String, Object>> boardList(HttpServletRequest request){
+
+		List<Map<String, Object>> mapList = null;
+
+		int totalCnt = 0;
+		try {
+			
+	    	BoardDto boardDto = new BoardDto();
+			int currentPage = Integer.parseInt((String)request.getParameter("currentPage"));
+			
+			totalCnt = boardSerivce.board_cnt(boardDto);
+			
+			boardDto.setLimit(Integer.parseInt((String)request.getParameter("limit")));
+			boardDto.setStart(Paging.startPage(totalCnt,currentPage));
+			boardDto.setPageSize(Paging.pageSize(totalCnt,currentPage));
+	    	
+	    	mapList = boardSerivce.board_list(boardDto);
+		} catch (Exception e) {
+		}
+        return mapList;
+    }
+	
+//	 게시판 조회
+	@RequestMapping(method = RequestMethod.POST, value = "/api/boardCnt")
+    public int boardListCnt(HttpServletRequest request){
     	BoardDto boardDto = new BoardDto();
-    	boardDto.setBoard_title(board_title);
-    	List<BoardDto> board_list = boardSerivce.board_list(boardDto);
-        return board_list;
+        return boardSerivce.board_cnt(boardDto);
     }
     
 	// 게시글 등록

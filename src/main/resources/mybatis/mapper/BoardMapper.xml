@@ -2,22 +2,32 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.example.demo.board.dao.BoardMapper">
-	<select id="board_list" parameterType="com.example.demo.board.dto.BoardDto" resultType="com.example.demo.board.dto.BoardDto">
-		SELECT @rownum:=@rownum+1 as ROW_NUM, BOARD_NUM, BOARD_TITLE, DATE_FORMAT(BOARD_DATE, '%Y-%m-%d') as BOARD_DATE, REG_ID, BOARD_READ_CNT 
+	<select id="board_list" parameterType="BoardDto" resultType="Map">
+		SELECT board_num, board_title, DATE_FORMAT(board_date, '%Y-%m-%d') as board_date, reg_id, board_read_cnt
 			FROM board 
-			WHERE BOARD_DEL = 'N' AND (@rownum:=0)=0
+			WHERE BOARD_DEL = 'N' 
 			<if test="board_title != null">
 				AND board_title LIKE CONCAT('%', #{board_title}, '%')
 			</if>
+	  		LIMIT #{start, jdbcType=INTEGER}, #{pageSize, jdbcType=INTEGER}
 		
 	</select>
 	
-	<insert id="board_insert" parameterType="com.example.demo.board.dto.BoardDto">
+	<select id="board_cnt" parameterType="BoardDto" resultType="int">
+		SELECT COUNT(board_num)
+			FROM board 
+			WHERE BOARD_DEL = 'N'
+			<if test="board_title != null">
+				AND board_title LIKE CONCAT('%', #{board_title}, '%')
+			</if>
+	</select>
+	
+	<insert id="board_insert" parameterType="BoardDto">
 		INSERT INTO board (BOARD_TITLE, BOARD_CONTENT, BOARD_DATE, REG_ID) 
 		values (#{board_title}, #{board_content}, DATE_FORMAT(sysdate(),'%Y-%m-%d %H:%i:%s'), #{reg_id})
 	</insert>
 	
-	<select id="boardDetail" parameterType="int" resultType="com.example.demo.board.dto.BoardDto">
+	<select id="boardDetail" parameterType="int" resultType="BoardDto">
 		SELECT BOARD_NUM, BOARD_TITLE, BOARD_CONTENT, REG_ID, DATE_FORMAT(BOARD_DATE, '%Y-%m-%d') as BOARD_DATE, BOARD_READ_CNT 
 			FROM board 
 			WHERE BOARD_NUM = #{board_num}

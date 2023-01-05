@@ -2,10 +2,11 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-  <mappers>
-    <mapper resource="LoginMapper.xml"/>
-    <mapper resource="BoardMapper.xml"/>
-    <mapper resource="MainMapper.xml"/>
-    <mapper resource="MapMapper.xml"/>
-  </mappers>
+  	<mappers>
+	    <mapper resource="LoginMapper.xml"/>
+	    <mapper resource="BoardMapper.xml"/>
+	    <mapper resource="MainMapper.xml"/>
+	    <mapper resource="MapMapper.xml"/>
+ 	</mappers>
+
 </configuration>

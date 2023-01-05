@@ -1,6 +1,8 @@
 package com.example.demo.board.service;
 
 import java.util.List;
+import java.util.Map;
+
 import org.springframework.stereotype.Service;
 import com.example.demo.board.dao.BoardMapper;
 import com.example.demo.board.dto.BoardDto;
@@ -12,7 +14,7 @@ public class BoardServiceImpl implements BoardSerivce {
     private final BoardMapper boardMapper;
 
 	@Override
-	public List<BoardDto> board_list(BoardDto boardDto) {
+	public List<Map<String, Object>> board_list(BoardDto boardDto) {
 		return boardMapper.board_list(boardDto);
 	}
 
@@ -34,6 +36,11 @@ public class BoardServiceImpl implements BoardSerivce {
 	@Override
 	public void boardReadCnt(int board_num) {
 		boardMapper.boardReadCnt(board_num);		
+	}
+
+	@Override
+	public int board_cnt(BoardDto boardDto) {
+		return boardMapper.board_cnt(boardDto);
 	}
 
 }

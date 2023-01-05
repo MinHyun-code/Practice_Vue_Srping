@@ -12,4 +12,8 @@ public class BoardDto {
 	private String board_date;
 	private String reg_id;
 	private int board_read_cnt;
+	
+	private int start;
+	private int pageSize;
+	private int limit;
 }
