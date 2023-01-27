@@ -20,14 +20,17 @@ public class LoginController {
 	
     // 로그인
     @RequestMapping(method = RequestMethod.POST, value = "/api/login")
-    public UserDto login(@RequestParam String id, @RequestParam String pw){
+    public UserDto login(@RequestParam String user_id, @RequestParam String user_pw){
 
     	UserDto login = new UserDto();
     	try {
-        	String dbPw = loginService.selectPw(id);
-        	if(passwordEncoder.matches(pw, dbPw)) {
-        		login = loginService.mypageInfo(id);
+        	String dbPw = loginService.selectPw(user_id);
+        	if(passwordEncoder.matches(user_pw, dbPw)) {
+        		login = loginService.mypageInfo(user_id);
         		login.setLogin_tf(true);
+        		login.setMessage("로그인 되었습니다.");
+        	} else {
+        		login.setMessage("아이디 혹은 비밀번호가 틀렸습니다.");
         	}
     	}
     	catch (Exception e) {
@@ -39,10 +42,10 @@ public class LoginController {
     
     // 회원가입
     @RequestMapping(method = RequestMethod.POST, value = "/api/join")
-    public void join(@RequestParam String id, @RequestParam String pw){
+    public void join(@RequestParam String user_id, @RequestParam String user_pw){
     	UserDto join = new UserDto();
-    	join.setUser_id(id);
-    	join.setUser_pw(passwordEncoder.encode(pw));
+    	join.setUser_id(user_id);
+    	join.setUser_pw(passwordEncoder.encode(user_pw));
     	loginService.joinAction(join);
     }
     

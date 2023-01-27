@@ -53,15 +53,15 @@ public class BoardController {
         return mapList;
     }
 	
-//	 게시판 조회
-	@RequestMapping(method = RequestMethod.POST, value = "/api/boardCnt")
-    public int boardListCnt(HttpServletRequest request){
-    	BoardDto boardDto = new BoardDto();
-        return boardSerivce.board_cnt(boardDto);
-    }
+//	게시글 개수
+	@RequestMapping(method = RequestMethod.POST, value = "/api/board/cnt")
+	    public int boardListCnt(HttpServletRequest request){
+	    	BoardDto boardDto = new BoardDto();
+	        return boardSerivce.board_cnt(boardDto);
+	    }
     
 	// 게시글 등록
-    @RequestMapping(method = RequestMethod.POST, value = "/board")
+    @RequestMapping(method = RequestMethod.POST, value = "/api/board/insert")
     public void boardInsert(@RequestParam String board_title, @RequestParam String board_content, @RequestParam String reg_id){
     	BoardDto boardDto = new BoardDto();
     	boardDto.setBoard_title(board_title); 
@@ -71,16 +71,17 @@ public class BoardController {
     }
     
     // 게시글 상세보기
-    @RequestMapping(method = RequestMethod.GET, value = "/board/{board_num}")
-    public BoardDto boardDetail(@PathVariable int board_num){
+    @RequestMapping(method = RequestMethod.POST, value = "/api/board/detail")
+    public BoardDto boardDetail(HttpServletRequest request){
     	BoardDto boardDto = new BoardDto();
+		int board_num = Integer.parseInt((String)request.getParameter("board_num"));
     	boardDto = boardSerivce.boardDetail(board_num);
     	boardSerivce.boardReadCnt(board_num);
     	return boardDto;
     }
     
     // 게시글 삭제
-    @RequestMapping(method = RequestMethod.DELETE, value = "/board/{board_num}")
+    @RequestMapping(method = RequestMethod.DELETE, value = "/api/board/{board_num}")
     public void boardDelete(@PathVariable int board_num){
     	boardSerivce.board_delete(board_num);
     }

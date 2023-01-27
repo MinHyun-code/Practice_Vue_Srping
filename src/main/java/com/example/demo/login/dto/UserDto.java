@@ -12,4 +12,5 @@ public class UserDto {
 	private String user_birth;
 	private String user_reg_date;
 	private String user_type;
+	private String message;
 }
