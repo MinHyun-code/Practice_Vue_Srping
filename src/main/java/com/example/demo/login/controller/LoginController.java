@@ -51,9 +51,9 @@ public class LoginController {
     
     // 개인정보 조회
     @RequestMapping(method = RequestMethod.GET, value = "/api/mypage/{id}")
-    public UserDto myInfo(@PathVariable String id) {
+    public UserDto myInfo(@PathVariable String user_id) {
     	UserDto myInfo = new UserDto();
-    	myInfo = loginService.mypageInfo(id);
+    	myInfo = loginService.mypageInfo(user_id);
     	return myInfo;
     }
     

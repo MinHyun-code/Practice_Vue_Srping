@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.plan.dao.PlanMapper">
+	<select id="planList" parameterType="BoardDto" resultType="Map">
+		SELECT 
+			seq, 
+			plan_title as title,
+			plan_type, 
+			DATE_FORMAT(plan_start_date, '%Y-%m-%d') as start, 
+			DATE_FORMAT(plan_end_date, '%Y-%m-%d') as end, 
+			reg_user_id
+		FROM calendar 
+	</select>
+</mapper>	
