@@ -19,5 +19,25 @@ public class PlanServiceImpl implements PlanSerivce {
 		return planMapper.planList(planDto);
 	}
 
+	@Override
+	public void planUpdate(PlanDto planDto) {
+		planMapper.planUpdate(planDto);
+	}
+
+	@Override
+	public PlanDto planDetail(int planDto) {
+		return planMapper.planDetail(planDto);
+	}
+
+	@Override
+	public PlanDto planInsert(PlanDto planDto) {
+		return planMapper.planInsert(planDto);
+	}
+
+	@Override
+	public void planDelete(PlanDto planDto) {
+		planMapper.planDelete(planDto);
+	}
+
 
 }

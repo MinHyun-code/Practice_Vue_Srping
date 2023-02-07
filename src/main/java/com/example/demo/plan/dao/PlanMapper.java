@@ -12,4 +12,8 @@ import com.example.demo.plan.dto.PlanDto;
 @Mapper
 public interface PlanMapper {
 	List<Map<String, Object>> planList(PlanDto planDto);
+	void planUpdate(PlanDto planDto);
+	void planDelete(PlanDto planDto);
+	PlanDto planDetail(int planDto);
+	PlanDto planInsert(PlanDto planDto);
 }

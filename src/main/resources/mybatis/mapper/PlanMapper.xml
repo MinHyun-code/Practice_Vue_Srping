@@ -2,14 +2,54 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.example.demo.plan.dao.PlanMapper">
-	<select id="planList" parameterType="BoardDto" resultType="Map">
+	<select id="planList" parameterType="PlanDto" resultType="Map">
 		SELECT 
 			seq, 
 			plan_title as title,
-			plan_type, 
-			DATE_FORMAT(plan_start_date, '%Y-%m-%d') as start, 
-			DATE_FORMAT(plan_end_date, '%Y-%m-%d') as end, 
+			CASE WHEN plan_type = 1 THEN '#e91e7fcf'
+				 WHEN plan_type = 2 THEN '#2196f3' END as color,
+			CASE WHEN plan_type = 1 THEN '#e91e7fcf'
+				 WHEN plan_type = 2 THEN '#2196f3' END as backgroundColor,
+			CASE WHEN plan_type = 1 THEN '#e91e7fcf'
+				 WHEN plan_type = 2 THEN '#2196f3' END as borderColor,
+			DATE_FORMAT(start, '%Y-%m-%d %H:%i:%S') as start, 
+			DATE_FORMAT(end, '%Y-%m-%d %H:%i:%S') as end, 
+			plan_type,
 			reg_user_id
-		FROM calendar 
+		FROM plan 
+			WHERE 
+				start <![CDATA[>]]> #{planStDate}
+				AND end <![CDATA[<]]> #{planEdDate}
+				AND reg_user_id = #{reg_user_id}
+				AND del_flag = 'N'
 	</select>
+	
+	<update id="planUpdate" parameterType="PlanDto">
+		UPDATE plan SET start = #{start}, end = #{end}
+		WHERE seq = #{seq}
+	</update>
+	
+	<update id="planDelete" parameterType="PlanDto">
+		UPDATE plan SET del_flag = 'Y'
+		WHERE seq = #{seq}
+	</update>
+	
+	<select id="planDetail" parameterType="int" resultType="PlanDto">
+		SELECT 
+			seq, 
+			plan_title,
+			plan_type, 
+			DATE_FORMAT(start, '%Y-%m-%d %H:%i:%S') as start, 
+			DATE_FORMAT(end, '%Y-%m-%d %H:%i:%S') as end, 
+			plan_content,
+			reg_user_id
+		FROM plan 
+		WHERE
+			seq = #{seq}
+		
+	</select>
+	<insert id="planInsert" parameterType="PlanDto">
+		INSERT INTO plan (start, end, reg_user_id, plan_title, plan_type, plan_content, del_flag) VALUES
+			(#{start}, #{end}, #{reg_user_id}, #{plan_title}, #{plan_type}, #{plan_content}, 'N')
+	</insert>
 </mapper>	
