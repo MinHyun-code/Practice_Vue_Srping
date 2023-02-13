@@ -87,6 +87,7 @@ public class PlanController {
 	    	PlanDto planDto = new PlanDto();
 	    	planDto.setPlan_title((request.getParameter("planTitle")));
 	    	planDto.setPlan_content((request.getParameter("planContent")));
+	    	planDto.setPlan_type((request.getParameter("planType")));
 	    	planDto.setStart((request.getParameter("planStart")));
 	    	planDto.setEnd((request.getParameter("planEnd")));
 	    	planDto.setReg_user_id((request.getParameter("regUserId")));

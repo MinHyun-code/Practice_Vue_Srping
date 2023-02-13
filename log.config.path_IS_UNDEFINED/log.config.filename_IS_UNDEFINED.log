@@ -1,20 +1,809 @@
-WARN  22-07-20 11:05:22[main] [DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer:78] - 
+INFO  23-02-13 09:53:31[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 19316 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 09:53:31[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 09:53:33[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 09:53:34[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 09:53:34[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 09:53:34[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 09:53:34[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 09:53:34[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 09:53:34[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 2363 ms
+WARN  23-02-13 09:53:34[main] [UserDetailsServiceAutoConfiguration:87] - 
 
-Found multiple occurrences of org.json.JSONObject on the class path:
-
-	jar:file:/C:/Users/user/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
-	jar:file:/C:/Users/user/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
-
-You may wish to exclude one of them to ensure predictable runtime behavior
-
-INFO  22-07-20 11:05:22[main] [PracticeApplicationTests:55] - Starting PracticeApplicationTests using Java 17.0.1 on mhan with PID 18704 (started by user in C:\springworkspace\Practice\practice)
-INFO  22-07-20 11:05:22[main] [PracticeApplicationTests:640] - No active profile set, falling back to 1 default profile: "default"
-DEBUG 22-07-20 11:05:23[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-WARN  22-07-20 11:05:25[main] [UserDetailsServiceAutoConfiguration:87] - 
-
-Using generated security password: 137e8338-0f32-4453-8c1d-34321ffab786
+Using generated security password: 14ec78b0-c88a-4d5b-b7a8-843768d78250
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-INFO  22-07-20 11:05:26[main] [DefaultSecurityFilterChain:52] - Will not secure any request
-INFO  22-07-20 11:05:27[main] [PracticeApplicationTests:61] - Started PracticeApplicationTests in 5.79 seconds (JVM running for 7.564)
+INFO  23-02-13 09:53:35[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 09:53:35[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 09:53:35[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 09:53:35[main] [PracticeApplication:61] - Started PracticeApplication in 4.166 seconds (JVM running for 5.498)
+INFO  23-02-13 09:54:00[http-nio-8080-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 09:54:00[http-nio-8080-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 09:54:00[http-nio-8080-exec-1] [DispatcherServlet:547] - Completed initialization in 1 ms
+INFO  23-02-13 09:54:00[http-nio-8080-exec-1] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 09:54:00[http-nio-8080-exec-1] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+INFO  23-02-13 09:54:00[http-nio-8080-exec-1] [Http11Processor:175] - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [{0x0d0x0a ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+INFO  23-02-13 09:55:11[http-nio-8080-exec-4] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 09:55:11[http-nio-8080-exec-4] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+INFO  23-02-13 09:57:35[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 24668 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 09:57:35[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 09:57:36[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 09:57:37[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 09:57:37[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 09:57:37[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 09:57:37[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 09:57:37[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 09:57:37[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1462 ms
+WARN  23-02-13 09:57:37[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: ddb1bcd9-38e6-4aef-8486-38d43c825cde
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 09:57:37[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 09:57:37[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 09:57:38[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 09:57:38[main] [PracticeApplication:61] - Started PracticeApplication in 3.052 seconds (JVM running for 4.337)
+INFO  23-02-13 09:57:51[http-nio-8080-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 09:57:51[http-nio-8080-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 09:57:51[http-nio-8080-exec-1] [DispatcherServlet:547] - Completed initialization in 0 ms
+INFO  23-02-13 09:57:51[http-nio-8080-exec-1] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 09:57:51[http-nio-8080-exec-1] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 09:57:51[http-nio-8080-exec-1] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 09:59:26[http-nio-8080-exec-4] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 09:59:26[http-nio-8080-exec-4] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 09:59:26[http-nio-8080-exec-4] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 09:59:46[http-nio-8080-exec-6] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 09:59:46[http-nio-8080-exec-6] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 09:59:46[http-nio-8080-exec-6] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 10:01:29[http-nio-8080-exec-8] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:01:29[http-nio-8080-exec-8] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 10:01:29[http-nio-8080-exec-8] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 10:02:35[http-nio-8080-exec-10] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:02:35[http-nio-8080-exec-10] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 10:02:35[http-nio-8080-exec-10] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 10:03:26[http-nio-8080-exec-1] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:03:26[http-nio-8080-exec-1] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 10:03:26[http-nio-8080-exec-1] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 10:03:47[http-nio-8080-exec-4] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:03:47[http-nio-8080-exec-4] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 10:03:47[http-nio-8080-exec-4] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 10:03:51[http-nio-8080-exec-5] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:03:51[http-nio-8080-exec-5] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 10:03:51[http-nio-8080-exec-5] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 10:06:00[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 5776 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 10:06:00[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 10:06:01[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 10:06:01[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 10:06:01[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 10:06:01[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 10:06:01[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 10:06:01[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 10:06:01[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1193 ms
+WARN  23-02-13 10:06:02[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: 3af93277-999e-4130-8ee5-0f11ebb0112a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 10:06:02[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 10:06:02[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 10:06:02[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 10:06:02[main] [PracticeApplication:61] - Started PracticeApplication in 2.604 seconds (JVM running for 3.569)
+INFO  23-02-13 10:06:07[http-nio-8080-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 10:06:07[http-nio-8080-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 10:06:07[http-nio-8080-exec-1] [DispatcherServlet:547] - Completed initialization in 0 ms
+INFO  23-02-13 10:06:07[http-nio-8080-exec-1] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:06:07[http-nio-8080-exec-1] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 10:06:07[http-nio-8080-exec-1] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 10:32:20[http-nio-8080-exec-4] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:32:20[http-nio-8080-exec-4] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 10:32:20[http-nio-8080-exec-4] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 10:33:55[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 3664 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 10:33:55[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 10:33:56[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 10:33:57[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 10:33:57[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 10:33:57[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 10:33:57[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 10:33:57[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 10:33:57[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1254 ms
+WARN  23-02-13 10:33:57[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: 96551cd3-dbde-46c9-bc44-5a23b5ed0544
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 10:33:57[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 10:33:58[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 10:33:58[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 10:33:58[main] [PracticeApplication:61] - Started PracticeApplication in 2.781 seconds (JVM running for 3.706)
+INFO  23-02-13 10:34:03[http-nio-8080-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 10:34:03[http-nio-8080-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 10:34:03[http-nio-8080-exec-1] [DispatcherServlet:547] - Completed initialization in 0 ms
+INFO  23-02-13 10:34:03[http-nio-8080-exec-1] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:34:03[http-nio-8080-exec-1] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+INFO  23-02-13 10:34:03[http-nio-8080-exec-1] [Http11Processor:175] - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [{0x0d0x0a ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+INFO  23-02-13 10:35:06[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 15900 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 10:35:06[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 10:35:07[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 10:35:07[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 10:35:07[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 10:35:07[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 10:35:07[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 10:35:07[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 10:35:07[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1010 ms
+WARN  23-02-13 10:35:08[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: b1a40a9b-1760-459b-a928-974a567e1d27
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 10:35:08[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 10:35:08[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 10:35:08[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 10:35:08[main] [PracticeApplication:61] - Started PracticeApplication in 2.276 seconds (JVM running for 3.026)
+INFO  23-02-13 10:35:10[http-nio-8080-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 10:35:10[http-nio-8080-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 10:35:10[http-nio-8080-exec-1] [DispatcherServlet:547] - Completed initialization in 1 ms
+INFO  23-02-13 10:35:10[http-nio-8080-exec-1] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:35:10[http-nio-8080-exec-1] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 10:35:10[http-nio-8080-exec-1] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 10:36:05[http-nio-8080-exec-3] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:36:05[http-nio-8080-exec-3] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 10:36:05[http-nio-8080-exec-3] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 10:38:34[http-nio-8080-exec-6] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:38:34[http-nio-8080-exec-6] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 10:38:34[http-nio-8080-exec-6] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 10:38:48[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 8520 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 10:38:48[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 10:38:49[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 10:38:49[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 10:38:49[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 10:38:49[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 10:38:49[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 10:38:49[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 10:38:49[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1412 ms
+WARN  23-02-13 10:38:50[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: e80ae84f-3f20-4d87-a750-7bd14e664f35
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 10:38:50[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 10:38:50[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 10:38:50[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 10:38:50[main] [PracticeApplication:61] - Started PracticeApplication in 2.85 seconds (JVM running for 3.607)
+INFO  23-02-13 10:38:54[http-nio-8080-exec-2] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 10:38:54[http-nio-8080-exec-2] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 10:38:54[http-nio-8080-exec-2] [DispatcherServlet:547] - Completed initialization in 1 ms
+INFO  23-02-13 10:38:54[http-nio-8080-exec-2] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:38:54[http-nio-8080-exec-2] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 10:38:54[http-nio-8080-exec-2] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 10:39:34[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 32520 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 10:39:34[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 10:39:34[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 10:39:35[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 10:39:35[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 10:39:35[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 10:39:35[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 10:39:35[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 10:39:35[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 987 ms
+WARN  23-02-13 10:39:35[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: d57de79b-2b15-4b09-9322-0d54db873be7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 10:39:35[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 10:39:35[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 10:39:35[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 10:39:35[main] [PracticeApplication:61] - Started PracticeApplication in 2.284 seconds (JVM running for 3.185)
+INFO  23-02-13 10:39:44[http-nio-8080-exec-2] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 10:39:44[http-nio-8080-exec-2] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 10:39:44[http-nio-8080-exec-2] [DispatcherServlet:547] - Completed initialization in 1 ms
+INFO  23-02-13 10:39:44[http-nio-8080-exec-2] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:39:44[http-nio-8080-exec-2] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 10:39:44[http-nio-8080-exec-2] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 10:39:48[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 548 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 10:39:48[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 10:39:48[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 10:39:49[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 10:39:49[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 10:39:49[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 10:39:49[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 10:39:49[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 10:39:49[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1095 ms
+WARN  23-02-13 10:39:49[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: 952a3d83-6ac5-4e63-8647-f5f65deff2e3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 10:39:49[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 10:39:50[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 10:39:50[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 10:39:50[main] [PracticeApplication:61] - Started PracticeApplication in 2.441 seconds (JVM running for 3.499)
+INFO  23-02-13 10:43:18[http-nio-8080-exec-2] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 10:43:18[http-nio-8080-exec-2] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 10:43:18[http-nio-8080-exec-2] [DispatcherServlet:547] - Completed initialization in 1 ms
+INFO  23-02-13 10:43:18[http-nio-8080-exec-2] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:43:18[http-nio-8080-exec-2] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+WARN  23-02-13 10:43:18[http-nio-8080-exec-2] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.String> com.example.demo.login.controller.LoginController.login(com.example.demo.login.dto.UserDto)]
+INFO  23-02-13 10:44:10[http-nio-8080-exec-4] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:44:10[http-nio-8080-exec-4] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+INFO  23-02-13 10:46:19[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 16920 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 10:46:19[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 10:46:20[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 10:46:21[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 10:46:21[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 10:46:21[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 10:46:21[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 10:46:21[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 10:46:21[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1537 ms
+WARN  23-02-13 10:46:21[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: c94fe2b8-cb91-4fcc-bf4c-f27f9b2fddb6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 10:46:22[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 10:46:22[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 10:46:22[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 10:46:22[main] [PracticeApplication:61] - Started PracticeApplication in 3.476 seconds (JVM running for 5.176)
+INFO  23-02-13 10:46:41[http-nio-8080-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 10:46:41[http-nio-8080-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 10:46:41[http-nio-8080-exec-1] [DispatcherServlet:547] - Completed initialization in 1 ms
+INFO  23-02-13 10:46:41[http-nio-8080-exec-1] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 10:46:41[http-nio-8080-exec-1] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+INFO  23-02-13 10:46:52[http-nio-8080-exec-3] [JwtFilter:35] - authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYWRtaW4iLCJpYXQiOjE2NzYyNTI4MDEsImV4cCI6MTY3NjI1NjQwMX0.n3g6L0SzYaOvd1ONhpBQIRVmkqgJ4jRY-nyjviBUJM8
+INFO  23-02-13 10:46:52[http-nio-8080-exec-3] [JwtFilter:56] - user_id: admin
+INFO  23-02-13 11:10:32[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 30400 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 11:10:32[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 11:10:33[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 11:10:33[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 11:10:33[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 11:10:33[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 11:10:33[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 11:10:33[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 11:10:33[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1057 ms
+WARN  23-02-13 11:10:34[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: f5fca797-a867-4a90-9f57-f0b58ca9abea
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 11:10:34[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 11:10:34[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 11:10:34[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 11:10:34[main] [PracticeApplication:61] - Started PracticeApplication in 2.34 seconds (JVM running for 3.178)
+INFO  23-02-13 11:10:47[http-nio-8080-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 11:10:47[http-nio-8080-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 11:10:47[http-nio-8080-exec-1] [DispatcherServlet:547] - Completed initialization in 1 ms
+INFO  23-02-13 11:10:47[http-nio-8080-exec-1] [JwtFilter:35] - authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYWRtaW4iLCJpYXQiOjE2NzYyNTI4MDEsImV4cCI6MTY3NjI1NjQwMX0.n3g6L0SzYaOvd1ONhpBQIRVmkqgJ4jRY-nyjviBUJM8
+INFO  23-02-13 11:10:47[http-nio-8080-exec-1] [JwtFilter:60] - user_id: admin
+INFO  23-02-13 11:10:57[http-nio-8080-exec-3] [JwtFilter:35] - authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYWRtaW4iLCJpYXQiOjE2NzYyNTI4MDEsImV4cCI6MTY3NjI1NjQwMX0.n3g6L0SzYaOvd1ONhpBQIRVmkqgJ4jRY-nyjviBUJM8
+INFO  23-02-13 11:10:57[http-nio-8080-exec-3] [JwtFilter:60] - user_id: admin
+INFO  23-02-13 11:11:07[http-nio-8080-exec-4] [JwtFilter:35] - authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYWRtaW4iLCJpYXQiOjE2NzYyNTI4MDEsImV4cCI6MTY3NjI1NjQwMX0.n3g6L0SzYaOvd1ONhpBQIRVmkqgJ4jRY-nyjviBUJM8
+INFO  23-02-13 11:11:07[http-nio-8080-exec-4] [JwtFilter:60] - user_id: admin
+INFO  23-02-13 11:11:34[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 23580 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 11:11:34[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 11:11:34[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 11:11:35[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 11:11:35[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 11:11:35[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 11:11:35[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 11:11:35[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 11:11:35[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 988 ms
+WARN  23-02-13 11:11:35[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: e2ed2192-8f99-4555-a4fd-75cfc5c6ffcc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+WARN  23-02-13 11:11:43[main] [AnnotationConfigServletWebServerApplicationContext:591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/example/demo/login/controller/SpringSecurity.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The constructor JwtFilter(LoginService, String) is undefined
+
+INFO  23-02-13 11:11:44[main] [StandardService:173] - Stopping service [Tomcat]
+INFO  23-02-13 11:11:44[main] [ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ERROR 23-02-13 11:11:44[main] [SpringApplication:830] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/example/demo/login/controller/SpringSecurity.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The constructor JwtFilter(LoginService, String) is undefined
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:719)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.example.demo.PracticeApplication.main(PracticeApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/example/demo/login/controller/SpringSecurity.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The constructor JwtFilter(LoginService, String) is undefined
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1571)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1460)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1347)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:759)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The constructor JwtFilter(LoginService, String) is undefined
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The constructor JwtFilter(LoginService, String) is undefined
+
+	at com.example.demo.login.controller.SpringSecurity.securityFilterChain(SpringSecurity.java:42)
+	at com.example.demo.login.controller.SpringSecurity$$EnhancerBySpringCGLIB$$27179bdd.CGLIB$securityFilterChain$0(<generated>)
+	at com.example.demo.login.controller.SpringSecurity$$EnhancerBySpringCGLIB$$27179bdd$$FastClassBySpringCGLIB$$b8dfa34d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.example.demo.login.controller.SpringSecurity$$EnhancerBySpringCGLIB$$27179bdd.securityFilterChain(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 37 common frames omitted
+INFO  23-02-13 11:11:56[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 32728 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 11:11:56[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 11:11:57[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 11:11:57[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 11:11:57[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 11:11:57[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 11:11:57[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 11:11:57[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 11:11:57[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1218 ms
+WARN  23-02-13 11:11:58[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: 986ab6ca-1fbb-4121-bafe-900a4261eafb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 11:11:58[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 11:11:58[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 11:11:58[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 11:11:58[main] [PracticeApplication:61] - Started PracticeApplication in 2.56 seconds (JVM running for 3.35)
+INFO  23-02-13 11:13:19[http-nio-8080-exec-2] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 11:13:19[http-nio-8080-exec-2] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 11:13:19[http-nio-8080-exec-2] [DispatcherServlet:547] - Completed initialization in 1 ms
+INFO  23-02-13 11:13:19[http-nio-8080-exec-2] [JwtFilter:35] - authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYWRtaW4iLCJpYXQiOjE2NzYyNTI4MDEsImV4cCI6MTY3NjI1NjQwMX0.n3g6L0SzYaOvd1ONhpBQIRVmkqgJ4jRY-nyjviBUJM8
+INFO  23-02-13 11:13:19[http-nio-8080-exec-2] [JwtFilter:60] - user_id: admin
+INFO  23-02-13 11:13:53[http-nio-8080-exec-3] [JwtFilter:35] - authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYWRtaW4iLCJpYXQiOjE2NzYyNTI4MDEsImV4cCI6MTY3NjI1NjQwMX0.n3g6L0SzYaOvd1ONhpBQIRVmkqgJ4jRY-nyjviBUJM8
+INFO  23-02-13 11:13:53[http-nio-8080-exec-3] [JwtFilter:60] - user_id: admin
+INFO  23-02-13 11:13:57[http-nio-8080-exec-4] [JwtFilter:35] - authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYWRtaW4yIiwiaWF0IjoxNjc2MjU0NDMzLCJleHAiOjE2NzYyNTgwMzN9.h37OhcmxXaE13VwRv1ggPQdRaNqeFp_HUXIOSVJJRkw
+INFO  23-02-13 11:13:57[http-nio-8080-exec-4] [JwtFilter:60] - user_id: admin2
+INFO  23-02-13 11:14:08[http-nio-8080-exec-5] [JwtFilter:35] - authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYWRtaW4yIiwiaWF0IjoxNjc2MjU0NDMzLCJleHAiOjE2NzYyNTgwMzN9.h37OhcmxXaE13VwRv1ggPQdRaNqeFp_HUXIOSVJJRkw
+INFO  23-02-13 11:14:08[http-nio-8080-exec-5] [JwtFilter:60] - user_id: admin2
+INFO  23-02-13 11:18:16[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 26076 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 11:18:16[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 11:18:17[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 11:18:17[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 11:18:17[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 11:18:17[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 11:18:17[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 11:18:18[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 11:18:18[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1434 ms
+WARN  23-02-13 11:18:18[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: 44c2f8ee-8289-47ce-b395-c56046592d84
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 11:18:18[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 11:18:19[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 11:18:19[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 11:18:19[main] [PracticeApplication:61] - Started PracticeApplication in 3.021 seconds (JVM running for 3.915)
+INFO  23-02-13 11:18:30[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 29680 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 11:18:30[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 11:18:31[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 11:18:31[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 11:18:31[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 11:18:31[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 11:18:31[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 11:18:32[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 11:18:32[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1145 ms
+WARN  23-02-13 11:18:32[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: fe21f3b3-74c2-409b-9a66-1f820373b778
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 11:18:32[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 11:18:32[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 11:18:32[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 11:18:32[main] [PracticeApplication:61] - Started PracticeApplication in 2.59 seconds (JVM running for 3.499)
+INFO  23-02-13 11:18:44[http-nio-8080-exec-2] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 11:18:44[http-nio-8080-exec-2] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 11:18:44[http-nio-8080-exec-2] [DispatcherServlet:547] - Completed initialization in 1 ms
+INFO  23-02-13 11:18:44[http-nio-8080-exec-2] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 11:18:44[http-nio-8080-exec-2] [JwtFilter:39] - authentication이 없습니다.
+INFO  23-02-13 11:18:44[http-nio-8080-exec-2] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-02-13 11:18:44[http-nio-8080-exec-2] [PoolBase:541] - HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+INFO  23-02-13 11:18:44[http-nio-8080-exec-2] [HikariDataSource:123] - HikariPool-1 - Start completed.
+DEBUG 23-02-13 11:18:44[http-nio-8080-exec-2] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 17 msec}
+DEBUG 23-02-13 11:18:45[http-nio-8080-exec-2] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_ID, USER_NAME, USER_BIRTH, USER_TYPE FROM `user` WHERE USER_ID = 'admin'
+ {executed in 1 msec}
+INFO  23-02-13 11:20:08[http-nio-8080-exec-4] [JwtFilter:35] - authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYWRtaW4yIiwiaWF0IjoxNjc2MjU0NDMzLCJleHAiOjE2NzYyNTgwMzN9.h37OhcmxXaE13VwRv1ggPQdRaNqeFp_HUXIOSVJJRkw
+INFO  23-02-13 11:20:09[http-nio-8080-exec-4] [JwtFilter:60] - user_id: admin2
+INFO  23-02-13 11:20:14[http-nio-8080-exec-5] [JwtFilter:35] - authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYWRtaW4yIiwiaWF0IjoxNjc2MjU0NDMzLCJleHAiOjE2NzYyNTgwMzN9.h37OhcmxXaE13VwRv1ggPQdRaNqeFp_HUXIOSVJJRkw
+INFO  23-02-13 11:20:14[http-nio-8080-exec-5] [JwtFilter:60] - user_id: admin2
+WARN  23-02-13 11:20:14[http-nio-8080-exec-5] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'user_id' for method parameter type String is not present]
+INFO  23-02-13 11:20:23[http-nio-8080-exec-7] [JwtFilter:35] - authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYWRtaW4yIiwiaWF0IjoxNjc2MjU0NDMzLCJleHAiOjE2NzYyNTgwMzN9.h37OhcmxXaE13VwRv1ggPQdRaNqeFp_HUXIOSVJJRkw
+INFO  23-02-13 11:20:23[http-nio-8080-exec-7] [JwtFilter:60] - user_id: admin2
+WARN  23-02-13 11:20:23[http-nio-8080-exec-7] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'user_id' for method parameter type String is not present]
+INFO  23-02-13 11:20:34[http-nio-8080-exec-9] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 11:20:34[http-nio-8080-exec-9] [JwtFilter:39] - authentication이 없습니다.
+WARN  23-02-13 11:20:34[http-nio-8080-exec-9] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'user_id' for method parameter type String is not present]
+INFO  23-02-13 11:22:04[http-nio-8080-exec-1] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 11:22:04[http-nio-8080-exec-1] [JwtFilter:39] - authentication이 없습니다.
+WARN  23-02-13 11:22:04[http-nio-8080-exec-1] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'user_id' for method parameter type String is not present]
+INFO  23-02-13 11:22:40[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 24168 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 11:22:40[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 11:22:41[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 11:22:42[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 11:22:42[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 11:22:42[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 11:22:42[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 11:22:42[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 11:22:42[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1095 ms
+WARN  23-02-13 11:22:42[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: ec6252c3-7801-4cb0-a3f7-2d90f2c90012
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 11:22:42[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 11:22:42[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 11:22:42[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 11:22:42[main] [PracticeApplication:61] - Started PracticeApplication in 2.464 seconds (JVM running for 3.338)
+INFO  23-02-13 11:22:47[http-nio-8080-exec-2] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 11:22:47[http-nio-8080-exec-2] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 11:22:47[http-nio-8080-exec-2] [DispatcherServlet:547] - Completed initialization in 1 ms
+INFO  23-02-13 11:22:47[http-nio-8080-exec-2] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 11:22:47[http-nio-8080-exec-2] [JwtFilter:39] - authentication이 없습니다.
+INFO  23-02-13 11:22:47[http-nio-8080-exec-2] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-02-13 11:22:47[http-nio-8080-exec-2] [PoolBase:541] - HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+INFO  23-02-13 11:22:47[http-nio-8080-exec-2] [HikariDataSource:123] - HikariPool-1 - Start completed.
+DEBUG 23-02-13 11:22:47[http-nio-8080-exec-2] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 12 msec}
+INFO  23-02-13 11:23:04[http-nio-8080-exec-3] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 11:23:04[http-nio-8080-exec-3] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 11:23:04[http-nio-8080-exec-3] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 1 msec}
+INFO  23-02-13 11:23:32[http-nio-8080-exec-4] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 11:23:32[http-nio-8080-exec-4] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 11:23:32[http-nio-8080-exec-4] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin1'
+ {executed in 1 msec}
+WARN  23-02-13 11:23:32[http-nio-8080-exec-4] [BCryptPasswordEncoder:126] - Empty encoded password
+INFO  23-02-13 11:23:38[http-nio-8080-exec-5] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 11:23:38[http-nio-8080-exec-5] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 11:23:38[http-nio-8080-exec-5] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 0 msec}
+INFO  23-02-13 11:23:50[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 8516 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 11:23:50[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 11:23:51[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 11:23:51[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 11:23:51[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 11:23:51[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 11:23:51[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 11:23:52[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 11:23:52[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1038 ms
+WARN  23-02-13 11:23:52[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: 72c06076-8706-44d2-8571-189e7026dbb6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 11:23:52[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 11:23:52[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 11:23:52[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 11:23:52[main] [PracticeApplication:61] - Started PracticeApplication in 2.419 seconds (JVM running for 3.213)
+INFO  23-02-13 11:23:57[http-nio-8080-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 11:23:57[http-nio-8080-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 11:23:57[http-nio-8080-exec-1] [DispatcherServlet:547] - Completed initialization in 0 ms
+INFO  23-02-13 11:23:57[http-nio-8080-exec-1] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 11:23:57[http-nio-8080-exec-1] [JwtFilter:39] - authentication이 없습니다.
+INFO  23-02-13 11:23:57[http-nio-8080-exec-1] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-02-13 11:23:57[http-nio-8080-exec-1] [PoolBase:541] - HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+INFO  23-02-13 11:23:58[http-nio-8080-exec-1] [HikariDataSource:123] - HikariPool-1 - Start completed.
+DEBUG 23-02-13 11:23:58[http-nio-8080-exec-1] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 31 msec}
+DEBUG 23-02-13 11:23:58[http-nio-8080-exec-1] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_ID, USER_NAME, USER_BIRTH, USER_TYPE FROM `user` WHERE USER_ID = 'admin'
+ {executed in 1 msec}
+INFO  23-02-13 11:24:18[http-nio-8080-exec-3] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 11:24:18[http-nio-8080-exec-3] [JwtFilter:39] - authentication이 없습니다.
+INFO  23-02-13 13:06:55[http-nio-8080-exec-6] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:06:55[http-nio-8080-exec-6] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 13:06:55[http-nio-8080-exec-6] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 12 msec}
+DEBUG 23-02-13 13:06:55[http-nio-8080-exec-6] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. SELECT USER_ID, USER_NAME, USER_BIRTH, USER_TYPE FROM `user` WHERE USER_ID = 'admin'
+ {executed in 1 msec}
+INFO  23-02-13 13:07:32[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 31248 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 13:07:32[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 13:07:32[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 13:07:33[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 13:07:33[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 13:07:33[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 13:07:33[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 13:07:33[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 13:07:33[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1185 ms
+WARN  23-02-13 13:07:33[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: 322325f6-6cc6-4d74-a5a6-ef4ca7333980
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 13:07:34[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 13:07:34[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 13:07:34[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 13:07:34[main] [PracticeApplication:61] - Started PracticeApplication in 2.914 seconds (JVM running for 3.989)
+INFO  23-02-13 13:07:48[http-nio-8080-exec-2] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 13:07:48[http-nio-8080-exec-2] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 13:07:48[http-nio-8080-exec-2] [DispatcherServlet:547] - Completed initialization in 0 ms
+INFO  23-02-13 13:07:48[http-nio-8080-exec-2] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:07:48[http-nio-8080-exec-2] [JwtFilter:39] - authentication이 없습니다.
+INFO  23-02-13 13:08:01[http-nio-8080-exec-3] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:08:01[http-nio-8080-exec-3] [JwtFilter:39] - authentication이 없습니다.
+INFO  23-02-13 13:08:06[http-nio-8080-exec-4] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:08:06[http-nio-8080-exec-4] [JwtFilter:39] - authentication이 없습니다.
+INFO  23-02-13 13:08:18[http-nio-8080-exec-5] [JwtFilter:35] - authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYWRtaW4iLCJpYXQiOjE2NzYyNjEyODYsImV4cCI6MTY3NjI2NDg4Nn0.a3AtYc4RBh7zZaLz_mHNhcyFkaO3orMuYcQVCnUlvw8
+INFO  23-02-13 13:08:18[http-nio-8080-exec-5] [JwtFilter:60] - user_id: admin
+INFO  23-02-13 13:08:59[http-nio-8080-exec-6] [JwtFilter:35] - authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYWRtaW4iLCJpYXQiOjE2NzYyNjEyODYsImV4cCI6MTY3NjI2NDg4Nn0.a3AtYc4RBh7zZaLz_mHNhcyFkaO3orMuYcQVCnUlvw8
+INFO  23-02-13 13:08:59[http-nio-8080-exec-6] [JwtFilter:60] - user_id: admin
+INFO  23-02-13 13:12:47[http-nio-8080-exec-9] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:12:47[http-nio-8080-exec-9] [JwtFilter:39] - authentication이 없습니다.
+WARN  23-02-13 13:12:47[http-nio-8080-exec-9] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'user_id' for method parameter type String is not present]
+INFO  23-02-13 13:31:39[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 10276 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 13:31:39[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 13:31:40[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 13:31:41[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 13:31:41[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 13:31:41[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 13:31:41[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 13:31:41[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 13:31:41[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1399 ms
+WARN  23-02-13 13:31:43[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: e258b368-840f-47d7-b04b-a7001cc441bd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 13:31:43[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 13:31:44[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 13:31:44[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 13:31:44[main] [PracticeApplication:61] - Started PracticeApplication in 5.112 seconds (JVM running for 6.133)
+INFO  23-02-13 13:31:58[http-nio-8080-exec-2] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 13:31:58[http-nio-8080-exec-2] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 13:31:58[http-nio-8080-exec-2] [DispatcherServlet:547] - Completed initialization in 1 ms
+INFO  23-02-13 13:31:58[http-nio-8080-exec-2] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:31:58[http-nio-8080-exec-2] [JwtFilter:39] - authentication이 없습니다.
+INFO  23-02-13 13:31:58[http-nio-8080-exec-2] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-02-13 13:31:59[http-nio-8080-exec-2] [PoolBase:541] - HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+INFO  23-02-13 13:31:59[http-nio-8080-exec-2] [HikariDataSource:123] - HikariPool-1 - Start completed.
+DEBUG 23-02-13 13:31:59[http-nio-8080-exec-2] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin2'
+ {executed in 12 msec}
+WARN  23-02-13 13:31:59[http-nio-8080-exec-2] [BCryptPasswordEncoder:126] - Empty encoded password
+INFO  23-02-13 13:32:05[http-nio-8080-exec-5] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:32:05[http-nio-8080-exec-5] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 13:32:05[http-nio-8080-exec-5] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 1 msec}
+INFO  23-02-13 13:32:23[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 276 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 13:32:23[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 13:32:24[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 13:32:24[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 13:32:24[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 13:32:24[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 13:32:24[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 13:32:25[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 13:32:25[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1169 ms
+WARN  23-02-13 13:32:25[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: 79a7fa64-33b4-4302-8ea2-d17796adacd4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 13:32:25[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 13:32:25[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 13:32:25[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 13:32:25[main] [PracticeApplication:61] - Started PracticeApplication in 2.706 seconds (JVM running for 3.851)
+INFO  23-02-13 13:33:49[http-nio-8080-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 13:33:49[http-nio-8080-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 13:33:49[http-nio-8080-exec-1] [DispatcherServlet:547] - Completed initialization in 1 ms
+INFO  23-02-13 13:33:49[http-nio-8080-exec-1] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:33:49[http-nio-8080-exec-1] [JwtFilter:39] - authentication이 없습니다.
+WARN  23-02-13 13:33:49[http-nio-8080-exec-1] [DefaultHandlerExceptionResolver:208] - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=----WebKitFormBoundaryYGWDqBnbOtD7HetO;charset=UTF-8' not supported]
+INFO  23-02-13 13:35:19[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 23680 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 13:35:19[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 13:35:20[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 13:35:21[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 13:35:21[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 13:35:21[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 13:35:21[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 13:35:21[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 13:35:21[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 2042 ms
+WARN  23-02-13 13:35:21[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: 7653da73-1f05-418e-bd9a-9c2a9ab6c49d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 13:35:22[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 13:35:22[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 13:35:22[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 13:35:22[main] [PracticeApplication:61] - Started PracticeApplication in 3.929 seconds (JVM running for 4.795)
+INFO  23-02-13 13:35:25[http-nio-8080-exec-2] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 13:35:25[http-nio-8080-exec-2] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 13:35:25[http-nio-8080-exec-2] [DispatcherServlet:547] - Completed initialization in 1 ms
+INFO  23-02-13 13:35:25[http-nio-8080-exec-2] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:35:25[http-nio-8080-exec-2] [JwtFilter:39] - authentication이 없습니다.
+INFO  23-02-13 13:35:25[http-nio-8080-exec-2] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-02-13 13:35:25[http-nio-8080-exec-2] [PoolBase:541] - HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+INFO  23-02-13 13:35:25[http-nio-8080-exec-2] [HikariDataSource:123] - HikariPool-1 - Start completed.
+DEBUG 23-02-13 13:35:25[http-nio-8080-exec-2] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 13 msec}
+INFO  23-02-13 13:40:17[http-nio-8080-exec-1] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:40:17[http-nio-8080-exec-1] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 13:40:17[http-nio-8080-exec-1] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 6 msec}
+INFO  23-02-13 13:40:36[http-nio-8080-exec-3] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:40:36[http-nio-8080-exec-3] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 13:40:37[http-nio-8080-exec-3] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 7 msec}
+INFO  23-02-13 13:41:04[main] [PracticeApplication:55] - Starting PracticeApplication using Java 17.0.1 on mhan with PID 20312 (C:\springworkspace\Practice\Toy_Project\target\classes started by user in C:\springworkspace\Practice\Toy_Project)
+INFO  23-02-13 13:41:04[main] [PracticeApplication:640] - No active profile set, falling back to 1 default profile: "default"
+DEBUG 23-02-13 13:41:05[main] [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+INFO  23-02-13 13:41:06[main] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-13 13:41:06[main] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 13:41:06[main] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-13 13:41:06[main] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+INFO  23-02-13 13:41:06[main] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-13 13:41:06[main] [ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1259 ms
+WARN  23-02-13 13:41:06[main] [UserDetailsServiceAutoConfiguration:87] - 
+
+Using generated security password: e522d137-452d-4dac-b9ec-58328d44dcb7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  23-02-13 13:41:07[main] [DefaultSecurityFilterChain:52] - Will not secure any request
+INFO  23-02-13 13:41:07[main] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-13 13:41:07[main] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-13 13:41:07[main] [PracticeApplication:61] - Started PracticeApplication in 2.82 seconds (JVM running for 3.798)
+INFO  23-02-13 13:41:26[http-nio-8080-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-13 13:41:26[http-nio-8080-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-13 13:41:26[http-nio-8080-exec-1] [DispatcherServlet:547] - Completed initialization in 1 ms
+INFO  23-02-13 13:41:26[http-nio-8080-exec-1] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:41:26[http-nio-8080-exec-1] [JwtFilter:39] - authentication이 없습니다.
+INFO  23-02-13 13:41:28[http-nio-8080-exec-1] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-02-13 13:41:36[http-nio-8080-exec-1] [PoolBase:541] - HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+INFO  23-02-13 13:41:36[http-nio-8080-exec-1] [HikariDataSource:123] - HikariPool-1 - Start completed.
+DEBUG 23-02-13 13:41:36[http-nio-8080-exec-1] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 72 msec}
+INFO  23-02-13 13:42:14[http-nio-8080-exec-2] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:42:14[http-nio-8080-exec-2] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 13:42:18[http-nio-8080-exec-2] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = ''
+ {executed in 1 msec}
+WARN  23-02-13 13:42:18[http-nio-8080-exec-2] [BCryptPasswordEncoder:126] - Empty encoded password
+INFO  23-02-13 13:42:25[http-nio-8080-exec-3] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:42:25[http-nio-8080-exec-3] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 13:42:25[http-nio-8080-exec-3] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 2 msec}
+INFO  23-02-13 13:42:39[http-nio-8080-exec-4] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:42:39[http-nio-8080-exec-4] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 13:42:39[http-nio-8080-exec-4] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 1 msec}
+INFO  23-02-13 13:42:50[http-nio-8080-exec-5] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:42:50[http-nio-8080-exec-5] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 13:42:50[http-nio-8080-exec-5] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 0 msec}
+INFO  23-02-13 13:43:14[http-nio-8080-exec-6] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:43:14[http-nio-8080-exec-6] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 13:43:14[http-nio-8080-exec-6] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 0 msec}
+INFO  23-02-13 13:43:37[http-nio-8080-exec-7] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:43:37[http-nio-8080-exec-7] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 13:43:37[http-nio-8080-exec-7] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 1 msec}
+INFO  23-02-13 13:43:55[http-nio-8080-exec-8] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:43:55[http-nio-8080-exec-8] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 13:43:55[http-nio-8080-exec-8] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'asd'
+ {executed in 0 msec}
+WARN  23-02-13 13:43:55[http-nio-8080-exec-8] [BCryptPasswordEncoder:126] - Empty encoded password
+INFO  23-02-13 13:43:59[http-nio-8080-exec-9] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:43:59[http-nio-8080-exec-9] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 13:43:59[http-nio-8080-exec-9] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 1 msec}
+INFO  23-02-13 13:46:52[http-nio-8080-exec-10] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:46:52[http-nio-8080-exec-10] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 13:46:52[http-nio-8080-exec-10] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 1 msec}
+INFO  23-02-13 13:47:15[http-nio-8080-exec-1] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:47:15[http-nio-8080-exec-1] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 13:47:15[http-nio-8080-exec-1] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 1 msec}
+INFO  23-02-13 13:48:23[http-nio-8080-exec-2] [JwtFilter:35] - authorization : null
+ERROR 23-02-13 13:48:23[http-nio-8080-exec-2] [JwtFilter:39] - authentication이 없습니다.
+DEBUG 23-02-13 13:48:23[http-nio-8080-exec-2] [sqltiming:368] -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT USER_PW FROM `user` WHERE USER_ID = 'admin'
+ {executed in 1 msec}

@@ -1,0 +1,120 @@
+ERROR 23-02-13 09:54:00[http-nio-8080-exec-1] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 09:55:11[http-nio-8080-exec-4] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 09:57:51[http-nio-8080-exec-1] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 09:59:26[http-nio-8080-exec-4] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 09:59:46[http-nio-8080-exec-6] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:01:29[http-nio-8080-exec-8] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:02:35[http-nio-8080-exec-10] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:03:26[http-nio-8080-exec-1] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:03:47[http-nio-8080-exec-4] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:03:51[http-nio-8080-exec-5] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:06:07[http-nio-8080-exec-1] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:32:20[http-nio-8080-exec-4] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:34:03[http-nio-8080-exec-1] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:35:10[http-nio-8080-exec-1] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:36:05[http-nio-8080-exec-3] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:38:34[http-nio-8080-exec-6] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:38:54[http-nio-8080-exec-2] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:39:44[http-nio-8080-exec-2] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:43:18[http-nio-8080-exec-2] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:44:10[http-nio-8080-exec-4] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 10:46:41[http-nio-8080-exec-1] [JwtFilter:39] - authentication을 잘못 보냈습니다.
+ERROR 23-02-13 11:11:44[main] [SpringApplication:830] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/example/demo/login/controller/SpringSecurity.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The constructor JwtFilter(LoginService, String) is undefined
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:719)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.example.demo.PracticeApplication.main(PracticeApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/example/demo/login/controller/SpringSecurity.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The constructor JwtFilter(LoginService, String) is undefined
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1607)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1571)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1460)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1347)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:759)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The constructor JwtFilter(LoginService, String) is undefined
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The constructor JwtFilter(LoginService, String) is undefined
+
+	at com.example.demo.login.controller.SpringSecurity.securityFilterChain(SpringSecurity.java:42)
+	at com.example.demo.login.controller.SpringSecurity$$EnhancerBySpringCGLIB$$27179bdd.CGLIB$securityFilterChain$0(<generated>)
+	at com.example.demo.login.controller.SpringSecurity$$EnhancerBySpringCGLIB$$27179bdd$$FastClassBySpringCGLIB$$b8dfa34d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.example.demo.login.controller.SpringSecurity$$EnhancerBySpringCGLIB$$27179bdd.securityFilterChain(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 37 common frames omitted
+ERROR 23-02-13 11:18:44[http-nio-8080-exec-2] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 11:20:34[http-nio-8080-exec-9] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 11:22:04[http-nio-8080-exec-1] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 11:22:47[http-nio-8080-exec-2] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 11:23:04[http-nio-8080-exec-3] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 11:23:32[http-nio-8080-exec-4] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 11:23:38[http-nio-8080-exec-5] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 11:23:57[http-nio-8080-exec-1] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 11:24:18[http-nio-8080-exec-3] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:06:55[http-nio-8080-exec-6] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:07:48[http-nio-8080-exec-2] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:08:01[http-nio-8080-exec-3] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:08:06[http-nio-8080-exec-4] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:12:47[http-nio-8080-exec-9] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:31:58[http-nio-8080-exec-2] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:32:05[http-nio-8080-exec-5] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:33:49[http-nio-8080-exec-1] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:35:25[http-nio-8080-exec-2] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:40:17[http-nio-8080-exec-1] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:40:36[http-nio-8080-exec-3] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:41:26[http-nio-8080-exec-1] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:42:14[http-nio-8080-exec-2] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:42:25[http-nio-8080-exec-3] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:42:39[http-nio-8080-exec-4] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:42:50[http-nio-8080-exec-5] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:43:14[http-nio-8080-exec-6] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:43:37[http-nio-8080-exec-7] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:43:55[http-nio-8080-exec-8] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:43:59[http-nio-8080-exec-9] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:46:52[http-nio-8080-exec-10] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:47:15[http-nio-8080-exec-1] [JwtFilter:39] - authentication이 없습니다.
+ERROR 23-02-13 13:48:23[http-nio-8080-exec-2] [JwtFilter:39] - authentication이 없습니다.

@@ -7,4 +7,5 @@ public interface LoginService {
 	String selectPw(String id);
 	UserDto mypageInfo(String id);
 	void myInfoUpdate(UserDto myInfo);
+	String login(String user_id, String password);
 }

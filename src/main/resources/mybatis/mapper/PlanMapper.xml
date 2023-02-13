@@ -7,11 +7,14 @@
 			seq, 
 			plan_title as title,
 			CASE WHEN plan_type = 1 THEN '#e91e7fcf'
-				 WHEN plan_type = 2 THEN '#2196f3' END as color,
+				 WHEN plan_type = 2 THEN '#2196f3'
+				 WHEN plan_type = 3 THEN '#24b024' END as color,
 			CASE WHEN plan_type = 1 THEN '#e91e7fcf'
-				 WHEN plan_type = 2 THEN '#2196f3' END as backgroundColor,
+				 WHEN plan_type = 2 THEN '#2196f3'
+				 WHEN plan_type = 3 THEN '#24b024' END as backgroundColor,
 			CASE WHEN plan_type = 1 THEN '#e91e7fcf'
-				 WHEN plan_type = 2 THEN '#2196f3' END as borderColor,
+				 WHEN plan_type = 2 THEN '#2196f3'
+				 WHEN plan_type = 3 THEN '#24b024' END as borderColor,
 			DATE_FORMAT(start, '%Y-%m-%d %H:%i:%S') as start, 
 			DATE_FORMAT(end, '%Y-%m-%d %H:%i:%S') as end, 
 			plan_type,

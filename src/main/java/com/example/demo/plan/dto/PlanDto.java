@@ -11,7 +11,7 @@ public class PlanDto {
 	private String reg_user_id;
 	private String plan_title;
 	private String plan_content;
-	private int plan_type;
+	private String plan_type;
 	
 	private String planStDate;
 	private String planEdDate;
